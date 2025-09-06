@@ -18,7 +18,7 @@ const AboutPage: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-16"
         >
-          <h1 className="text-6xl lg:text-8xl font-light text-black mb-8 leading-[0.9] font-poppins tracking-tight">
+          <h1 className="text-6xl lg:text-8xl font-light text-black dark:text-white mb-8 leading-[0.9] font-poppins tracking-tight">
             About
           </h1>
         </motion.div>
@@ -33,17 +33,17 @@ const AboutPage: React.FC = () => {
               className="space-y-8"
             >
               <div className="space-y-6">
-                <p className="text-xl lg:text-2xl text-gray-700 leading-relaxed font-neuton">
+                <p className="text-xl lg:text-2xl text-gray-700 dark:text-gray-300 leading-relaxed font-neuton">
                   I'm a product designer with 8+ years of experience creating meaningful digital experiences 
                   for startups and Fortune 500 companies.
                 </p>
-                <p className="text-lg text-gray-600 leading-relaxed font-neuton">
+                <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed font-neuton">
                   My passion lies in solving complex problems through human-centered design and strategic thinking. 
                   Currently, I lead design at TechFlow, where I've helped increase user engagement by 150% 
                   and reduce support tickets by 40% through thoughtful UX improvements and comprehensive 
                   design system implementation.
                 </p>
-                <p className="text-lg text-gray-600 leading-relaxed font-neuton">
+                <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed font-neuton">
                   When I'm not designing, you can find me exploring new coffee shops, hiking local trails, 
                   or experimenting with film photography. I believe the best designs come from diverse 
                   experiences and perspectives.
@@ -51,7 +51,7 @@ const AboutPage: React.FC = () => {
               </div>
 
               <div className="pt-8">
-                <h2 className="text-sm uppercase tracking-wider text-gray-500 mb-8 font-poppins">Experience</h2>
+                <h2 className="text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-8 font-poppins">Experience</h2>
                 <div className="space-y-12">
                   {[
                     {
@@ -81,11 +81,11 @@ const AboutPage: React.FC = () => {
                       className="group"
                     >
                       <div className="flex items-start justify-between mb-3">
-                        <h3 className="text-xl font-light text-black font-poppins">{job.role}</h3>
-                        <span className="text-sm text-gray-500 font-neuton">{job.period}</span>
+                        <h3 className="text-xl font-light text-black dark:text-white font-poppins">{job.role}</h3>
+                        <span className="text-sm text-gray-500 dark:text-gray-400 font-neuton">{job.period}</span>
                       </div>
-                      <p className="text-gray-600 mb-2 font-neuton font-medium">{job.company}</p>
-                      <p className="text-gray-600 leading-relaxed font-neuton">{job.description}</p>
+                      <p className="text-gray-600 dark:text-gray-300 mb-2 font-neuton font-medium">{job.company}</p>
+                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed font-neuton">{job.description}</p>
                     </motion.div>
                   ))}
                 </div>
@@ -112,18 +112,18 @@ const AboutPage: React.FC = () => {
 
               <div className="space-y-8">
                 <div>
-                  <h3 className="text-sm uppercase tracking-wider text-gray-500 mb-4 font-poppins">Location</h3>
-                  <p className="text-gray-700 font-neuton">San Francisco, CA</p>
+                  <h3 className="text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-4 font-poppins">Location</h3>
+                  <p className="text-gray-700 dark:text-gray-300 font-neuton">San Francisco, CA</p>
                 </div>
 
                 <div>
-                  <h3 className="text-sm uppercase tracking-wider text-gray-500 mb-4 font-poppins">Status</h3>
-                  <p className="text-gray-700 font-neuton">Available for new projects</p>
+                  <h3 className="text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-4 font-poppins">Status</h3>
+                  <p className="text-gray-700 dark:text-gray-300 font-neuton">Available for new projects</p>
                 </div>
 
                 <div>
-                  <h3 className="text-sm uppercase tracking-wider text-gray-500 mb-4 font-poppins">Tools & Skills</h3>
-                  <div className="space-y-2 text-gray-700 font-neuton">
+                  <h3 className="text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-4 font-poppins">Tools & Skills</h3>
+                  <div className="space-y-2 text-gray-700 dark:text-gray-300 font-neuton">
                     <p>Figma, Sketch, Principle, Framer</p>
                     <p>User Research, Prototyping</p>
                     <p>Design Systems, Accessibility</p>
@@ -132,7 +132,7 @@ const AboutPage: React.FC = () => {
                 </div>
 
                 <div className="pt-4">
-                  <button className="group inline-flex items-center text-black hover:text-gray-600 transition-colors font-poppins font-medium">
+                  <button className="group inline-flex items-center text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors font-poppins font-medium">
                     <Download size={16} className="mr-2" />
                     Download Resume
                     <ArrowUpRight size={16} className="ml-1 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -148,12 +148,12 @@ const AboutPage: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="border-t border-gray-200 pt-16 mt-20"
+          className="border-t border-gray-200 dark:border-gray-800 pt-16 mt-20"
         >
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
-              <h2 className="text-3xl font-light text-black mb-6 font-poppins">Let's work together</h2>
-              <p className="text-gray-600 leading-relaxed font-neuton text-lg">
+              <h2 className="text-3xl font-light text-black dark:text-white mb-6 font-poppins">Let's work together</h2>
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed font-neuton text-lg">
                 Always interested in new opportunities and exciting projects. 
                 Feel free to reach out if you'd like to collaborate.
               </p>
@@ -161,19 +161,19 @@ const AboutPage: React.FC = () => {
             <div className="space-y-4">
               <a
                 href="mailto:hello@sarahchen.design"
-                className="group inline-flex items-center text-black hover:text-gray-600 transition-colors font-poppins"
+                className="group inline-flex items-center text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors font-poppins"
               >
                 hello@sarahchen.design
                 <ArrowUpRight size={16} className="ml-1 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </a>
-              <div className="flex space-x-6 text-sm text-gray-500 font-neuton">
-                <a href="https://linkedin.com/in/sarahchen" className="hover:text-black transition-colors">
+              <div className="flex space-x-6 text-sm text-gray-500 dark:text-gray-400 font-neuton">
+                <a href="https://linkedin.com/in/sarahchen" className="hover:text-black dark:hover:text-white transition-colors">
                   LinkedIn
                 </a>
-                <a href="https://dribbble.com/sarahchen" className="hover:text-black transition-colors">
+                <a href="https://dribbble.com/sarahchen" className="hover:text-black dark:hover:text-white transition-colors">
                   Dribbble
                 </a>
-                <a href="https://twitter.com/sarahchen" className="hover:text-black transition-colors">
+                <a href="https://twitter.com/sarahchen" className="hover:text-black dark:hover:text-white transition-colors">
                   Twitter
                 </a>
               </div>

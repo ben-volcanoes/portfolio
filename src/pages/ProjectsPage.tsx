@@ -20,10 +20,10 @@ const ProjectsPage: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-16"
         >
-          <h1 className="text-6xl lg:text-8xl font-light text-black mb-8 leading-[0.9] font-poppins tracking-tight">
+          <h1 className="text-6xl lg:text-8xl font-light text-black dark:text-white mb-8 leading-[0.9] font-poppins tracking-tight">
             Work
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl leading-relaxed font-neuton">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl leading-relaxed font-neuton">
             A collection of selected work spanning user experience design, product strategy, 
             and interface design across various industries and platforms.
           </p>
@@ -56,18 +56,18 @@ const ProjectsPage: React.FC = () => {
                   </div>
                   <div className="lg:col-span-4 lg:pt-2">
                     <div className="flex items-start justify-between mb-4">
-                      <h2 className="text-2xl font-light text-black group-hover:text-gray-600 transition-colors font-poppins">
+                      <h2 className="text-2xl font-light text-black dark:text-white group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors font-poppins">
                         {project.title}
                       </h2>
                       <ArrowUpRight 
-                        size={20} 
-                        className="text-gray-400 group-hover:text-black group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300 flex-shrink-0 ml-4" 
+                        size={20}
+                        className="text-gray-400 dark:text-gray-500 group-hover:text-black dark:group-hover:text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300 flex-shrink-0 ml-4"
                       />
                     </div>
-                    <p className="text-gray-600 leading-relaxed mb-4 font-neuton">
+                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4 font-neuton">
                       {project.description}
                     </p>
-                    <div className="flex items-center text-sm text-gray-500 space-x-4 font-neuton">
+                    <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 space-x-4 font-neuton">
                       <span>{project.year}</span>
                       <span>•</span>
                       <span>{project.category}</span>
@@ -76,7 +76,7 @@ const ProjectsPage: React.FC = () => {
                       {project.tags.slice(0, 3).map((tag) => (
                         <span
                           key={tag}
-                          className="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium font-neuton"
+                          className="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-medium font-neuton"
                         >
                           {tag}
                         </span>

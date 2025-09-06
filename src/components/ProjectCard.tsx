@@ -30,22 +30,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <div className="space-y-4">
           <div className="flex items-start justify-between">
             <div className="flex-1">
-              <h3 className="text-xl font-light text-black group-hover:text-gray-600 transition-colors font-poppins">
+              <h3 className="text-xl font-light text-black dark:text-white group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors font-poppins">
                 {project.title}
               </h3>
-              <div className="flex items-center text-sm text-gray-500 space-x-4 mt-1 font-neuton">
+              <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 space-x-4 mt-1 font-neuton">
                 <span>{project.year}</span>
                 <span>•</span>
                 <span>{project.category}</span>
               </div>
             </div>
             <ArrowUpRight 
-              size={18} 
-              className="text-gray-400 group-hover:text-black group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300 flex-shrink-0 ml-4" 
+              size={18}
+              className="text-gray-400 dark:text-gray-500 group-hover:text-black dark:group-hover:text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300 flex-shrink-0 ml-4"
             />
           </div>
           
-          <p className="text-gray-600 leading-relaxed text-sm font-neuton">
+          <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm font-neuton">
             {project.description}
           </p>
           
@@ -53,7 +53,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             {project.tags.slice(0, 3).map((tag) => (
               <span
                 key={tag}
-                className="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium font-neuton"
+                className="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-medium font-neuton"
               >
                 {tag}
               </span>
