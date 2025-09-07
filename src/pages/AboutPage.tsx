@@ -62,7 +62,7 @@ const AboutPage: React.FC = () => {
                     },
                     {
                       role: 'Product Designer',
-                      actual company: 'PayFit',
+                      company: 'PayFit',
                       period: '2020 - 2022',
                       description: 'Designed mobile and web applications for fintech and healthcare clients. Collaborated with cross-functional teams to deliver user-centered solutions.'
                     },
